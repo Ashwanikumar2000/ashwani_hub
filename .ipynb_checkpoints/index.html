@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Recognition</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            background-image: url('C:\Users\sinha\OneDrive\Desktop\rajveer doc\Rajveer albums\geu rajveer photo.jpg'); /* Path to your background image */
+            background-size: cover;  /* Ensure the image covers the screen */
+            background-position: center;  /* Center the background image */
+            background-attachment: fixed;  /* Keep the background fixed when scrolling */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+        
+        img {
+            width: 640px;   /* Standard width */
+            height: 480px;  /* Standard height */
+            border: 2px solid #ddd;  /* Optional border */
+        }
+
+        h1 {
+            position: absolute;
+            top: 40px;
+            left: 40%;
+            z-index: 20;
+            color: black;
+            font-family: Arial, sans-serif;
+            font-size: 45px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Face Recognition Live Stream</h1>
+    <img src="{{ url_for('video_feed') }}" width="100%" />
+</body>
+</html>
